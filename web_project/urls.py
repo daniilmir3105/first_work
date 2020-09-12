@@ -19,6 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('articles/', include('articles.urls')),
     path('multik/', include('zeichentrickfilm.urls')),
-    path('grappelli/', include('grappelli.urls')), # nice view of admin
+    path('grappelli/', include('grappelli.urls')),  # nice view of admin
     path('admin/', admin.site.urls)
 ]

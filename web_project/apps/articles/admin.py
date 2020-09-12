@@ -5,6 +5,6 @@ from . import models
 Article = models.Article
 Comment = models.Comment
 
-# регистрируем наши модели в админку 
+# регистрируем наши модели в админку
 admin.site.register(Article)
 admin.site.register(Comment)

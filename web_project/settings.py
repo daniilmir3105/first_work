@@ -35,7 +35,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'articles.apps.ArticlesConfig',
     'zeichentrickfilm.apps.ZeichentrickfilmConfig',
-    'grappelli', # nice view of admin
+    'grappelli',  # nice view of admin
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,7 +60,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(PROJECT_ROOT, 'templates') # подключаем дезигн
+            os.path.join(PROJECT_ROOT, 'templates')  # подключаем дезигн
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -111,8 +111,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-# смена языка здесь 
-LANGUAGE_CODE = 'ru-ru' # 'en-us' - по умолчанию 
+# смена языка здесь
+LANGUAGE_CODE = 'ru-ru'  # 'en-us' - по умолчанию
 
 TIME_ZONE = 'UTC'
 
@@ -128,4 +128,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static') # для подключения дезигна для админа
+# для подключения дезигна для админа
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
