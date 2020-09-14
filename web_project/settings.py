@@ -60,7 +60,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(PROJECT_ROOT, 'templates')  # подключаем дезигн
+            os.path.join(BASE_DIR, 'templates')  # подключаем дезигн
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -133,7 +133,7 @@ STATIC_ROOT = '/static'
 # MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    # 'web_project/static',
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+#     # 'web_project/static',
+# ]
