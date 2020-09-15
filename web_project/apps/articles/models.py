@@ -5,6 +5,7 @@ from django.utils import timezone
 # здесь мы создаем модели того, что будет в приложении
 # конкретные элементы мы задаем полями в классах
 
+
 class Article(models.Model):
     # поле для ввода небольшого текста (max_length - обязателен)
     article_title = models.CharField('Title of article', max_length=100)
