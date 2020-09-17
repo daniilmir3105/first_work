@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-app_name = 'articles' # создаем привязку к articles(*используется в list.html)
+app_name = 'articles'  # создаем привязку к articles(*используется в list.html)
 urlpatterns = [
-    path('', views.index, name = 'index'),
+    path('', views.index, name='index'),
     # path('test/', views.test, name = 'test')
-    path('<int:article_id>/', views.detail, name='detail'), # приложение будет запоминать и использовать в дальнейшем id для ориентации
-    path('<int:article_id>/leave_comment', views.leave_comment, name='leave_comment')
+    # приложение будет запоминать и использовать в дальнейшем id для ориентации
+    path('<int:article_id>/', views.detail, name='detail'),
+    path('<int:article_id>/leave_comment',
+         views.leave_comment, name='leave_comment')
 ]
